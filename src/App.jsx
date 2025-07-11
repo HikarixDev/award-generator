@@ -1,18 +1,6 @@
 import { useState } from "react"
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
-import { Textarea } from "@/components/ui/textarea"
-import { Card, CardContent } from "@/components/ui/card"
-import {
-    Select,
-    SelectTrigger,
-    SelectContent,
-    SelectItem,
-    SelectValue
-} from "@/components/ui/select"
 
-import { awardsData } from "./awardsData.json"
-
+const awardsData = await import("./awardsData.json").then(m => m.awardsData)
 const allEntries = Object.entries(awardsData)
 
 export default function AwardGenerator() {
@@ -69,67 +57,49 @@ export default function AwardGenerator() {
     const filteredEntries = allEntries.filter(([, v]) => v.type === type)
 
     return (
-        <div className="grid gap-4">
-            <Card>
-                <CardContent className="grid gap-2 p-4">
-                    <Textarea
-                        placeholder="Paste request here to auto-fill"
-                        value={rawInput}
-                        onChange={e => setRawInput(e.target.value)}
-                    />
-                    <Button onClick={parseInput}>Parse Input</Button>
-                </CardContent>
-            </Card>
+        <div style={{ display: 'grid', gap: '1rem', maxWidth: 600, margin: 'auto' }}>
+            <div>
+                <textarea
+                    placeholder="Paste request here to auto-fill"
+                    value={rawInput}
+                    onChange={e => setRawInput(e.target.value)}
+                    rows={5}
+                    style={{ width: '100%' }}
+                />
+                <button onClick={parseInput} style={{ marginTop: '0.5rem' }}>Parse Input</button>
+            </div>
 
-            <Card>
-                <CardContent className="grid gap-2 p-4">
-                    <Select value={type} onValueChange={value => {
-                        setType(value)
-                        setName("")
-                    }}>
-                        <SelectTrigger>
-                            <SelectValue placeholder="Select Type" />
-                        </SelectTrigger>
-                        <SelectContent>
-                            <SelectItem value="Course">Course</SelectItem>
-                            <SelectItem value="Award">Award</SelectItem>
-                            <SelectItem value="Qualification">Qualification</SelectItem>
-                            <SelectItem value="Ribbon">Ribbon</SelectItem>
-                        </SelectContent>
-                    </Select>
+            <div style={{ border: '1px solid #ccc', padding: '1rem' }}>
+                <select value={type} onChange={e => { setType(e.target.value); setName("") }}>
+                    <option value="Course">Course</option>
+                    <option value="Award">Award</option>
+                    <option value="Qualification">Qualification</option>
+                    <option value="Ribbon">Ribbon</option>
+                </select>
 
-                    <Select value={name} onValueChange={setName} disabled={!type}>
-                        <SelectTrigger>
-                            <SelectValue placeholder="Select Entry" />
-                        </SelectTrigger>
-                        <SelectContent>
-                            {filteredEntries.map(([key, entry]) => (
-                                <SelectItem key={key} value={key}>{`${key} - ${entry.name}`}</SelectItem>
-                            ))}
-                        </SelectContent>
-                    </Select>
+                <select value={name} onChange={e => setName(e.target.value)} disabled={!type} style={{ display: 'block', marginTop: '0.5rem' }}>
+                    <option value="">Select Entry</option>
+                    {filteredEntries.map(([key, entry]) => (
+                        <option key={key} value={key}>{`${key} - ${entry.name}`}</option>
+                    ))}
+                </select>
 
-                    <Input placeholder="Date Completed (e.g. 31/MAR/2025)" value={completionDate} onChange={e => setCompletionDate(e.target.value)} />
-                    <Input placeholder="Update Date (e.g. 06/APR/2025)" value={updateDate} onChange={e => setUpdateDate(e.target.value)} />
-                    <Input placeholder="Reviewer Name" value={reviewer} onChange={e => setReviewer(e.target.value)} />
-                    <Textarea placeholder="Custom Reason (optional)" value={customReason} onChange={e => setCustomReason(e.target.value)} />
-                    <Button onClick={generate}>Generate</Button>
-                </CardContent>
-            </Card>
+                <input placeholder="Date Completed (e.g. 31/MAR/2025)" value={completionDate} onChange={e => setCompletionDate(e.target.value)} style={{ display: 'block', marginTop: '0.5rem', width: '100%' }} />
+                <input placeholder="Update Date (e.g. 06/APR/2025)" value={updateDate} onChange={e => setUpdateDate(e.target.value)} style={{ display: 'block', marginTop: '0.5rem', width: '100%' }} />
+                <input placeholder="Reviewer Name" value={reviewer} onChange={e => setReviewer(e.target.value)} style={{ display: 'block', marginTop: '0.5rem', width: '100%' }} />
+                <textarea placeholder="Custom Reason (optional)" value={customReason} onChange={e => setCustomReason(e.target.value)} rows={3} style={{ display: 'block', marginTop: '0.5rem', width: '100%' }} />
+                <button onClick={generate} style={{ marginTop: '0.5rem' }}>Generate</button>
+            </div>
 
-            <Card>
-                <CardContent className="p-4">
-                    <h3 className="font-bold mb-2">Forum Reply</h3>
-                    <Textarea value={reply} rows={7} readOnly />
-                </CardContent>
-            </Card>
+            <div>
+                <h3>Forum Reply</h3>
+                <textarea value={reply} rows={6} readOnly style={{ width: '100%' }} />
+            </div>
 
-            <Card>
-                <CardContent className="p-4">
-                    <h3 className="font-bold mb-2">BBCode for Personnel File</h3>
-                    <Textarea value={code} rows={6} readOnly />
-                </CardContent>
-            </Card>
+            <div>
+                <h3>BBCode for Personnel File</h3>
+                <textarea value={code} rows={5} readOnly style={{ width: '100%' }} />
+            </div>
         </div>
     )
 }
