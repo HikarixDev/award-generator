@@ -11,7 +11,7 @@ import {
     SelectValue
 } from "@/components/ui/select"
 
-import { awardsData } from "./awardsDataFull"
+import { awardsData } from "./awardsData.json"
 
 const allEntries = Object.entries(awardsData)
 
