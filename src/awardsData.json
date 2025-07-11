@@ -1,0 +1,206 @@
+{
+  "PFTQ": {
+    "type": "Qualification",
+    "name": "Police Field Training Qualification",
+    "reason": "Given upon becoming a Field Training Officer.",
+    "image": "https://i.imgur.com/CO4zMmi.png"
+  },
+  "PDQ": {
+    "type": "Qualification",
+    "name": "Police Detective Qualification",
+    "reason": "Given upon completing the Detective Training Program.",
+    "image": "https://i.imgur.com/fEVjQwy.jpg"
+  },
+  "PSQ": {
+    "type": "Qualification",
+    "name": "Police Supervisor Qualification",
+    "reason": "Given upon completing the Supervisor Training Program.",
+    "image": "https://i.imgur.com/Kuc6W7p.png"
+  },
+  "PCQ": {
+    "type": "Qualification",
+    "name": "Police Command Qualification",
+    "reason": "Given upon completing the Command Training Program.",
+    "image": "https://i.imgur.com/TZh3bmz.png"
+  },
+  "PSFQ": {
+    "type": "Qualification",
+    "name": "Police Staff Qualification",
+    "reason": "Given upon becoming a Staff Officer.",
+    "image": "https://i.imgur.com/7bAE4Ul.jpg"
+  },
+  "MOV": {
+    "type": "Award",
+    "name": "Medal of Valor",
+    "reason": "For extraordinary bravery or heroism in the line of duty at extreme personal risk.",
+    "image": "https://i.imgur.com/P6HcIj0.png"
+  },
+  "PMED": {
+    "type": "Award",
+    "name": "Police Medal",
+    "reason": "For individual acts of heroism in the line of duty.",
+    "image": "https://i.imgur.com/3agArFy.png"
+  },
+  "PSTAR": {
+    "type": "Award",
+    "name": "Police Star",
+    "reason": "For exceptional judgment or skillful tactics in dangerous situations.",
+    "image": "https://i.imgur.com/RbR2UtF.png"
+  },
+  "PLSM": {
+    "type": "Award",
+    "name": "Police Life Saving Medal",
+    "reason": "For rescuing or attempting to rescue a person from imminent danger.",
+    "image": "https://i.imgur.com/Ss1tUI6.png"
+  },
+  "PCSA": {
+    "type": "Award",
+    "name": "Police Chief Service Award",
+    "reason": "For impeccable service and extraordinary dedication.",
+    "image": "http://i.imgur.com/Q4Nk2HC.png"
+  },
+  "PDSM": {
+    "type": "Award",
+    "name": "Police Distinguished Service Medal",
+    "reason": "For consistently exceptional service.",
+    "image": "https://i.imgur.com/muVVHNV.png",
+    "tiers": [
+      "https://i.imgur.com/uOMPF7X.png",
+      "https://i.imgur.com/uXzv5P9.png",
+      "https://i.imgur.com/N1jSDVf.png",
+      "https://i.imgur.com/nqmmAVV.png",
+      "https://i.imgur.com/Yqr1ixU.png",
+      "https://i.imgur.com/NfC06da.png"
+    ]
+  },
+  "PMA": {
+    "type": "Award",
+    "name": "Police Meritorious Achievement Medal",
+    "reason": "For a noteworthy act or prolonged exceptional duty.",
+    "image": "https://i.imgur.com/QnUtsII.png",
+    "tiers": [
+      "https://i.imgur.com/IC0Kwsu.png",
+      "https://i.imgur.com/HALr9jE.png",
+      "https://i.imgur.com/eYSUFlf.png",
+      "https://i.imgur.com/UkQrd1M.png",
+      "https://i.imgur.com/lBF2C2n.png",
+      "https://i.imgur.com/MRkq7Q1.png"
+    ]
+  },
+  "PECA": {
+    "type": "Award",
+    "name": "Police Exemplary Conduct Award",
+    "reason": "Given every 3 months of clean service without discipline.",
+    "image": "https://i.imgur.com/lqp1ERf.png"
+  },
+  "ESM": {
+    "type": "Award",
+    "name": "Event Service Medal",
+    "reason": "Awarded for representing the department in official events.",
+    "image": "https://i.imgur.com/c2TxHJ2.png",
+    "tiers": [
+      "https://i.imgur.com/zp1t4Rb.png",
+      "https://i.imgur.com/pCItxAZ.png",
+      "https://i.imgur.com/wx81uer.png",
+      "https://i.imgur.com/AuqumYu.png",
+      "https://i.imgur.com/l98qIp4.png",
+      "https://i.imgur.com/uUO4zlt.png"
+    ]
+  },
+  "SSM": {
+    "type": "Award",
+    "name": "Sharpshooter Medal",
+    "reason": "Awarded for passing bonus achievement criteria in both MOUT courses.",
+    "image": "https://i.imgur.com/SyppCU2.png"
+  },
+  "MMED": {
+    "type": "Award",
+    "name": "Marksman Medal",
+    "reason": "Awarded for passing bonus achievement criteria in one MOUT course.",
+    "image": "https://i.imgur.com/iGr0AJt.png"
+  },
+  "OSR": {
+    "type": "Ribbon",
+    "name": "Operations Service Ribbon",
+    "reason": "Given for every 50 points earned in the Operations Bureau.",
+    "image": "https://i.imgur.com/Epsuuof.png",
+    "tiers": [
+      "https://i.imgur.com/um9sEvU.png",
+      "https://i.imgur.com/jXqkMiw.png",
+      "https://i.imgur.com/9ug3ogG.png",
+      "https://i.imgur.com/GXWN73t.png",
+      "https://i.imgur.com/n57Kk0j.png",
+      "https://i.imgur.com/mURrWZv.png"
+    ]
+  },
+  "DSR": {
+    "type": "Ribbon",
+    "name": "Detective Service Ribbon",
+    "reason": "Given for every 45 Detective Bureau submissions completed.",
+    "image": "https://i.imgur.com/DTGRWqV.png",
+    "tiers": [
+      "https://i.imgur.com/GvXqz39.png",
+      "https://i.imgur.com/8a2DoGD.png",
+      "https://i.imgur.com/61X8W6h.png",
+      "https://i.imgur.com/eTOfjT2.png",
+      "https://i.imgur.com/v49Fb0u.png",
+      "https://i.imgur.com/g4F12sb.png"
+    ]
+  },
+  "SOSR": {
+    "type": "Ribbon",
+    "name": "Special Operations Service Ribbon",
+    "reason": "Given for every 75 points earned in the Special Operations Bureau.",
+    "image": "https://i.imgur.com/O6PttHd.png",
+    "tiers": [
+      "https://i.imgur.com/cVOUNvW.png",
+      "https://i.imgur.com/GBTVNDM.png",
+      "https://i.imgur.com/hNTli75.png",
+      "https://i.imgur.com/sJJEVR3.png",
+      "https://i.imgur.com/rxNFQZY.png",
+      "https://i.imgur.com/0VuOAIh.png"
+    ]
+  },
+  "ASR": {
+    "type": "Ribbon",
+    "name": "Administrative Service Ribbon",
+    "reason": "Given every 250 points earned within Administrative Services Bureau.",
+    "image": "https://i.imgur.com/E5jeeTM.png",
+    "tiers": [
+      "https://i.imgur.com/6UdI37R.png",
+      "https://i.imgur.com/Ty6U3Rk.png",
+      "https://i.imgur.com/kR20PKI.png",
+      "https://i.imgur.com/B2c87na.png",
+      "https://i.imgur.com/wzN22zB.png",
+      "https://i.imgur.com/MMFuToD.png"
+    ]
+  },
+  "FTPR": {
+    "type": "Ribbon",
+    "name": "Field Training Program Ribbon",
+    "reason": "Given for every 50 hours of field training by a Field Training Officer.",
+    "image": "https://i.imgur.com/Z9q8HtF.png",
+    "tiers": [
+      "https://i.imgur.com/PKMqLI8.png",
+      "https://i.imgur.com/FhjU4et.png",
+      "https://i.imgur.com/FmbhzxB.png",
+      "https://i.imgur.com/BoqqMt6.png",
+      "https://i.imgur.com/RSinNKO.png",
+      "https://i.imgur.com/TJO3a9I.png"
+    ]
+  },
+  "PSR": {
+    "type": "Ribbon",
+    "name": "Professional Standards Ribbon",
+    "reason": "Given for 25 IA cases or 25 Public Communication points.",
+    "image": "https://i.imgur.com/18TO1kw.png",
+    "tiers": [
+      "https://i.imgur.com/9Cj1M2U.png",
+      "https://i.imgur.com/HLHjRwI.png",
+      "https://i.imgur.com/5fb3RQb.png",
+      "https://i.imgur.com/fR3pYNL.png",
+      "https://i.imgur.com/eMpMvHQ.png",
+      "https://i.imgur.com/Vaa5zUO.png"
+    ]
+  }
+}
