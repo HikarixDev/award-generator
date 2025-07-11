@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const awardsData = await import("./awardsData.json").then(m => m.awardsData)
+import awardsData from "./awardsData.json"
 const allEntries = Object.entries(awardsData)
 
 export default function AwardGenerator() {
